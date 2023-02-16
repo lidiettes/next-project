@@ -13,7 +13,7 @@ export async function ListOfPosts() {
 
     return posts.map(post => (
         <article key={post.id}>
-            <Link href='/posts/[id]' as={`/posts/${post.id}`}>
+            <Link style={{textDecoration: 'none'}} href='/posts/[id]' as={`/posts/${post.id}`}>
                 <h2 style={{ color: '#ca2d2d' }}>{post.title}</h2>
                 <p>{post.body}</p>
                 <LikeButton id={post.id} />
