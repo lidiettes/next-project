@@ -1,5 +1,13 @@
+'use client'
+
 import Link from "next/link"
 import styles from './Navigation.module.css'
+import ResponsiveAppBar from "./ResponsiveAppBar"
+
+
+
+
+
 
 
 
@@ -17,6 +25,7 @@ const links = [{
 
 export function Navigation() {
     return (
+        <>
         <header className={styles.header}>
             <nav>
                 <ul className={styles.navigation}>
@@ -31,5 +40,7 @@ export function Navigation() {
                 </ul>
             </nav>
         </header>
+        <ResponsiveAppBar/>
+        </>
     )
 }
