@@ -8,15 +8,10 @@ const fetchSinglePost = (id) => {
         .then(res => res.json())
 }
 
-
-
-
 export default async function Post({ params, children }) {
 
     const { id } = params;
     const post = await fetchSinglePost(id)
-
-
 
     return (
         <div>

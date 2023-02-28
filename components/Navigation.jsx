@@ -1,15 +1,5 @@
-'use client'
-
 import Link from "next/link"
 import styles from './Navigation.module.css'
-import ResponsiveAppBar from "./ResponsiveAppBar"
-
-
-
-
-
-
-
 
 const links = [{
     label: 'Home',
@@ -40,7 +30,7 @@ export function Navigation() {
                 </ul>
             </nav>
         </header>
-        <ResponsiveAppBar/>
+
         </>
     )
 }

@@ -1,9 +1,18 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
   experimental: {
-    appDir: true
+    appDir: true,
+    optimizeFonts: {
+      fonts: [
+        {
+          family: 'Space Grotesk',
+      
+          subsets: ['latin-ext'],
+        },
+      ],
+    },
   },
-  reactStrictMode: true
-}
+  reactStrictMode: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

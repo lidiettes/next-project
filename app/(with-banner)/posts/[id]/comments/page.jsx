@@ -1,6 +1,7 @@
 
 const fetchComments = async (id) => {
-    await new Promise(resolve => setTimeout(resolve, 3000))
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    // throw new Error('Error')
 
     return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
         next: {
@@ -18,7 +19,7 @@ export default async function Post({ params }) {
 
 
     return (
-<ul style={{background:'#b2acac', fontSize:'10px'}}>
+<ul style={{background:'#ebe5e5', fontSize:'10px'}}>
     {
         comments.map(comment => (
             <li key={comment.id}>
